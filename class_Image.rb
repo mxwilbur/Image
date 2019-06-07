@@ -4,14 +4,14 @@ class Image
     @image = Image
   end
 
-  def output_image(*arg)
+  def output_image
     y = []
     @image.each_index do |a|
-        @image[a].each_index do |i|
-            y << @image[a][i]
-        end
-        puts y.join 
-        y = []
+      @image[a].each_index do |i|
+        y << @image[a][i]
+      end
+      puts y.join 
+      y = []
     end
   end 
 
